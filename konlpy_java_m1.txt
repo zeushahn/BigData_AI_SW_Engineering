@@ -1,4 +1,4 @@
-* Konlpy를 사용시 Java 문제 발생
+# Konlpy를 사용시 Java 문제 발생
 
 1) 기존에 설치된 Java를 완전 삭제 한다. 삭제후 확인 방법은 터미널에서 java -version 이라고 타이핑 하면 error가 발생해야 한다.
 
