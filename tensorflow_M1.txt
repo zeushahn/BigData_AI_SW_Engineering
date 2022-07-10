@@ -49,3 +49,9 @@ pip install jupyter
   jupyter notebook
 
 - VSCode를 사용하는 경우 Kernel을 새로운 환경으로 구성한 python으로 변경
+
+(7) GPU Enable?
+
+import tensorflow
+tensorflow.config.list_physical_devices('GPU')
+==> [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')] : OK!
