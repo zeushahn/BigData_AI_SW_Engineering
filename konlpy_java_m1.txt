@@ -1,26 +1,18 @@
 # Konlpy를 사용시 Java 문제 발생
 
-1) 기존에 설치된 Java를 완전 삭제 한다. 
-sudo rm -rf /Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin  
-sudo rm -rf /Library/PreferencePanes/JavaControlPanel.prefPane  
-sudo rm -rf /Library/Application\ Support/Oracle/Java/ 
-sudo rm -rf /Library/Java/JavaVirtualMachines 
 
-
-2) 삭제후 확인 방법은 터미널에서 java -version 이라고 타이핑 하면 error가 발생해야 한다.
-
-3) https://www.azul.com/downloads/zulu-community/?version=java-15-mts&os=macos&architecture=arm-64-bit&package=jdk
+1) https://www.azul.com/downloads/zulu-community/?version=java-15-mts&os=macos&architecture=arm-64-bit&package=jdk
 이 Zulu Open JDK의 arm64용 15버전입니다. (16버전은 않됨)
 
-4) 터미널에서 
+2) 터미널에서 
   open ~/.zshrc 
 
-5) 다음의 내용 삽입
+3) 다음의 내용 삽입
 # JAVA PATH
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-15.jdk/Contents/Home
 export PATH=${PATH}:$JAVA_HOME/bin:
 
-6) 터미널에서 
+4) 터미널에서 
   source ./.zshrc
 
-7) 터미널에서 자바 버전 확인 
+5) 터미널에서 자바 버전 확인 
